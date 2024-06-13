@@ -1,0 +1,36 @@
+.burger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.burger-icon {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.menu-links-container {
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 0;
+}
+
+.menu-links a:hover {
+  background-color: #ddd;
+}
