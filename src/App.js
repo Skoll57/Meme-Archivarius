@@ -5,6 +5,7 @@ import { Header } from "./Components/Header/Header";
 import { Main } from "./Components/Main/Main";
 import { Register } from "./Components/Register/Register";
 import { Login } from "./Components/Register/Login";
+import { Footer } from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
