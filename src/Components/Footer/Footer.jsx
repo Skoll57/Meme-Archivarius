@@ -21,53 +21,65 @@ import wa from "../../Assets/SocialIcons/whatsapp-icon.svg";
 
 export const Footer = () => {
   return (
-    <section className={styles.main}>
-      <div>
-        <div className={styles.imgBlock}>
-          <img className={styles.logo} src={one} alt="logo" />
-          <img className={styles.logo} src={two} alt="logo" />
-          <img className={styles.logo} src={three} alt="logo" />
-          <img className={styles.logo} src={four} alt="logo" />
-          <img className={styles.logo} src={five} alt="logo" />
+    <section>
+      <div className={styles.main}>
+        <div>
+          <div className={styles.imgBlock}>
+            <img className={styles.logo} src={one} alt="logo" />
+            <img className={styles.logo} src={two} alt="logo" />
+            <img className={styles.logo} src={three} alt="logo" />
+            <img className={styles.logo} src={four} alt="logo" />
+            <img className={styles.logo} src={five} alt="logo" />
+          </div>
+
+          <h1>
+            <hr />
+            <Link className={styles.link} to={"/"}>
+              Meme <br /> Archivarius <br />
+            </Link>
+
+            <hr />
+          </h1>
+
+          <div className={styles.imgBlock}>
+            <img className={styles.logo} src={six} alt="logo" />
+            <img className={styles.logo} src={seven} alt="logo" />
+            <img className={styles.logo} src={eight} alt="logo" />
+            <img className={styles.logo} src={nine} alt="logo" />
+            <img className={styles.logo} src={ten} alt="logo" />
+          </div>
         </div>
 
-        <h1>
-          <hr />
-          <Link className={styles.link} to={"/"}>
-            Meme <br /> Archivarius <br />
-            <sup className={styles.sup}>sience 2024</sup>
+        <div className={styles.textBlock}>
+          Данный сайт является архивом смешных картинок, которые были взяты из
+          открытых источников и не являются зарегистророванным товаром. Я
+          признателен создателям данных мемов, и выражаю благодарность всему
+          интернет сообществу за креативность и безмерно весёлую движуху,
+          создаваемую самыми простыми людьми со всех уголков нашей прекрасной
+          планеты! Всем добра и АминЬ!
+        </div>
+
+        <div className={styles.socialBlock}>
+          <Link to={"/"}>
+            <img src={wa} alt="icon" />
           </Link>
-
-          <hr />
-        </h1>
-
-        <div className={styles.imgBlock}>
-          <img className={styles.logo} src={six} alt="logo" />
-          <img className={styles.logo} src={seven} alt="logo" />
-          <img className={styles.logo} src={eight} alt="logo" />
-          <img className={styles.logo} src={nine} alt="logo" />
-          <img className={styles.logo} src={ten} alt="logo" />
+          <Link to={"/"}>
+            <img src={tg} alt="icon" />
+          </Link>
+          <Link to={"/"}>
+            <img src={vk} alt="icon" />
+          </Link>
         </div>
       </div>
-
-      <div className={styles.textBlock}>
-        Данный сайт является архивом смешных картинок, который были взяты из
-        открытых источников и не являются зарегистророванным товаром. Я
-        признателен создателям данных мемов, и выражаю благодарность всему
-        интернет сообществу за креативность и безмерно весёлую движуху,
-        создаваемую самыми простыми людьми со всех уголков нашей прекрасной
-        планеты! Всем добра и АминЬ!
-      </div>
-
-      <div className={styles.socialBlock}>
-        <Link>
-          <img src={wa} alt="icon" />
-        </Link>
-        <Link>
-          <img src={tg} alt="icon" />
-        </Link>
-        <Link>
-          <img src={vk} alt="icon" />
+      <div className={styles.footerBottom}>
+        sience 2024 <br />
+        Designed by{" "}
+        <Link
+          style={{ textDecoration: "none", color: "white" }}
+          to={"https://github.com/Skoll57"}
+          target="_blank"
+        >
+          Skoll57
         </Link>
       </div>
     </section>

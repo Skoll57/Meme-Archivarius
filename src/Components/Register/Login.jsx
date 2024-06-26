@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./Login.module.css";
+
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
@@ -36,8 +38,10 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <Form title="ВОЙТИ" handleClick={handleLogin} />
-    </div>
+    <section className={styles.bgWrapper}>
+      <div className={styles.main}>
+        <Form title="ВОЙТИ В ХАТУ!" handleClick={handleLogin} />
+      </div>
+    </section>
   );
 };

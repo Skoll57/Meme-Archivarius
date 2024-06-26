@@ -1,0 +1,11 @@
+.bgWrapper {
+  background-image: url("../../Assets/Background/tony.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  height: 88vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}

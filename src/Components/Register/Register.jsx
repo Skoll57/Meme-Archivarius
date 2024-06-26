@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./Register.module.css";
+
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
@@ -32,5 +34,11 @@ export const Register = () => {
       .catch(console.error);
   };
 
-  return <Form title="register" handleClick={handleRegister} />;
+  return (
+    <div className={styles.bgWrapper}>
+      <section className={styles.main}>
+        <Form title="ЗАРЕГИСТРИРОВАТЬСЯ" handleClick={handleRegister} />
+      </section>
+    </div>
+  );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./Form.module.css";
+
 import { useState } from "react";
 
 export const Form = ({ title, handleClick }) => {
@@ -6,22 +8,38 @@ export const Form = ({ title, handleClick }) => {
   const [pass, setPass] = useState("");
 
   return (
-    <section>
-      <input
-        type="email"
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="E-MAIL"
-        value={email}
-      />
+    <section className={styles.main}>
+      <div className={styles.inputs}>
+        <input
+          className={styles.input}
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="ПОЧТА"
+          value={email}
+        />
 
-      <input
-        type="password"
-        onChange={(e) => setPass(e.target.value)}
-        placeholder="PASSWORD"
-        value={pass}
-      />
+        <br />
 
-      <button onClick={() => handleClick(email, pass)}>{title}</button>
+        <input
+          className={styles.input}
+          type="password"
+          onChange={(e) => setPass(e.target.value)}
+          onClick={(e) => {}}
+          placeholder="ПАРОЛЬ"
+          value={pass}
+        />
+      </div>
+
+      <button
+        className={styles.btn}
+        onClick={() => {
+          handleClick(email, pass);
+          setEmail("");
+          setPass("");
+        }}
+      >
+        {title}
+      </button>
     </section>
   );
 };
